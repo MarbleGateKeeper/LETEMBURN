@@ -125,6 +125,9 @@ dependencies {
     localImplementation("maven.modrinth:codechicken-lib:${codechicken_lib_version}")
     localImplementation("maven.modrinth:brandons-core:${brandons_core_version}")
     localImplementation("maven.modrinth:draconic-evolution:${draconic_evolution_version}")
+
+    localRuntime("maven.modrinth:createaddition:neoforge-1.21.1-1.5.10") // Creative Generator for fast test
+
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

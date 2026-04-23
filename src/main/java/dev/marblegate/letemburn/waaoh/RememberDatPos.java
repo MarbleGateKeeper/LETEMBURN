@@ -16,26 +16,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package dev.marblegate.letemburn.mixin;
+package dev.marblegate.letemburn.waaoh;
 
-import java.util.List;
-import java.util.Set;
-import me.fallenbreath.conditionalmixin.api.mixin.RestrictiveMixinConfigPlugin;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.core.BlockPos;
 
-public class MixinConfigPlugin extends RestrictiveMixinConfigPlugin {
-    @Override
-    @Nullable
-    public String getRefMapperConfig() {
-        return null;
-    }
-
-    @Override
-    public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {}
-
-    @Override
-    @Nullable
-    public List<String> getMixins() {
-        return null;
-    }
+public interface RememberDatPos {
+    void remember(BlockPos pos);
 }

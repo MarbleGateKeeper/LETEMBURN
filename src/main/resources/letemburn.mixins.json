@@ -4,10 +4,14 @@
   "plugin": "dev.marblegate.letemburn.mixin.MixinConfigPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "TileReactorCoreMixin"
+    "draconicrevolution.ProcessExplosionMixin",
+    "draconicrevolution.TileReactorCoreMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
-  "minVersion": "0.8"
+  "minVersion": "0.8",
+  "client": [
+    "draconicrevolution.BlockEntityRenderDispatcherMixin"
+  ]
 }
