@@ -51,9 +51,11 @@ public abstract class ProcessExplosionMixin implements RememberDatPos {
 
     @Inject(method = "detonate", at = @At(value = "HEAD"))
     private void detonate$letsCalculateInSiteOkay(CallbackInfoReturnable<Boolean> cir) {
-        origin = Vector3.fromBlockPosCenter(lETEMBURN$cache);
-        while (!calculationComplete) {
-            updateCalculation();
+        if (lETEMBURN$cache != null) {
+            origin = Vector3.fromBlockPosCenter(lETEMBURN$cache);
+            while (!calculationComplete) {
+                updateCalculation();
+            }
         }
     }
 

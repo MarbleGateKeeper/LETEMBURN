@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "draconicrevolution.ProcessExplosionMixin",
-    "draconicrevolution.TileReactorCoreMixin"
+    "draconicrevolution.TileReactorCoreMixin",
+    "mekanism.BlockCardboardBoxMixin"
   ],
   "injectors": {
     "defaultRequire": 1

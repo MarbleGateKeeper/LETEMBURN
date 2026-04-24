@@ -126,6 +126,8 @@ dependencies {
     localImplementation("maven.modrinth:brandons-core:${brandons_core_version}")
     localImplementation("maven.modrinth:draconic-evolution:${draconic_evolution_version}")
 
+    localImplementation("maven.modrinth:mekanism:${mekanism_version}")
+
     localRuntime("maven.modrinth:createaddition:neoforge-1.21.1-1.5.10") // Creative Generator for fast test
 
 }
